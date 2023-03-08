@@ -1,0 +1,294 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box ;
+}
+body{
+  font-family: helvetica;
+  font-size: 16px;
+  line-height: 24px;
+  color: #333;
+}
+.ancho{
+  max-width: 1200px;
+  margin: auto;
+}
+header{
+  background-color: #fff9f1;
+border-top: 10px #FF3281 solid;
+padding: 10px;
+}
+.logo{
+  width: 200px;
+}
+.logo img{
+  width: 100%;
+}
+.contenedor_redes{
+  width: 200px;
+
+}
+.contenedor_cabecera{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.contenedor_redes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.iconos_redes{
+  font-size: 35px;
+  color: #333;
+  transition: all 0.5s;
+}
+.iconos_redes:hover{
+  color: #FF3281;
+}
+nav{
+  border: 1px blue solid;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+nav a{
+  padding: 10px 30px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: bold;
+  color: #333;
+}
+.contenedor_promociones{
+  background-image: url(imagenes/fondopiedras.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 500px;
+  flex-direction: row;
+  text-align: center;
+}
+.contenedor_texto{
+  text-align: center;
+  margin: auto;
+  max-width: 600px;
+  line-height: 30px;
+}
+.contenedor_texto h1{
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 60px;
+  
+}
+.contenedor_texto p{
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  max-width: 500px;
+}
+.boton_rosa{
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  margin: auto;
+  padding: 10px 30px;
+  background-color: #FF3281;
+  display:inline-block ;
+}
+.boton_negro{
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  margin: auto;
+  padding: 10px 30px;
+  border: 2px #FF3281 solid;
+  display:inline-block ;
+}
+.contenedor_perfumes{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-left: 5px;
+}
+.contenedor_perfumes figure img{
+  width: 100%;
+}
+.contenedor_perfumes figure{
+  width: 50%;
+}
+.contenedor_perfumes article{
+width: 45%;
+}
+.contenedor_perfumes h3{
+  padding: 15px;
+  text-align: left;
+}
+.contenedor_perfumes span{
+  line-height: 30px;
+}
+.titulo{
+  text-align: center;
+}
+.info2{
+  background-color: #fff9f1;
+  padding: 10px;
+ 
+}
+.contenedor_trabajo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+.contenedor_trabajo figure img{
+  width: 100%;
+  border-radius: 20px;
+}
+.contenedor_trabajo figure{
+  width: 48%;
+  padding: 0;
+}
+.puesto{
+  max-width: 45%;
+}
+.puesto article{
+  padding: 15px;
+}
+.contenedor_servicios{
+  background-color:#fff9f1 ;
+  padding: 20px;
+  text-align: center;
+}
+.info_servicios{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  text-align: center;
+}
+.info_servicios article{
+  background-color:#ffe8a4 ;
+  max-width: 300px;
+  padding: 15px;
+  border-radius: 20px;
+  text-align: center;
+}
+.info_servicios p{
+  text-align: justify;
+}
+.info_servicios figure{
+  max-width: 150px;
+  margin: auto;
+}
+.info_servicios figure img{
+max-width: 150px;
+height: 150px;
+object-fit: cover;
+border-radius: 50px;
+border: 10px white solid;
+}
+footer{
+  text-align: center;
+}
+.final{
+  border-bottom: 10px #FF3281 solid;
+}
+
+/* abajo es para movil */
+@media screen and (max-width:630px){
+nav {
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+}
+nav a{
+  display: block;
+  width: 100%;
+  border-bottom: 2px #333 dotted;
+  ;
+}
+}
+@media screen and (max-width: 480px){
+  .contenedor_cabecera{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  }
+  .contenedor_redes{
+    padding-bottom: 15px;
+  }
+  .contenedor_texto h1{
+    text-align: left;
+    padding-left: 15px;
+  }
+  .contenedor_texto p{
+    font-size: 16px;
+    padding: 20px;
+  }
+  .contenedor_perfumes figure{
+    width: 95%;
+  }
+  .contenedor_perfumes article{
+  width: 95%;
+  margin-top: 20px;
+  }
+  .contenedor_perfumes h3{
+    font-size: 16px ;
+    text-align: center;
+  }
+  .puesto{
+    max-width: 100%;
+      }
+      .contenedor_trabajo figure{
+        width: 100%;
+      }
+}
+@media screen and (max-width: 355px){
+  .boton_rosa{
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width:768px){
+  .contenedor_perfumes{
+    flex-direction: column-reverse;
+  }
+  .contenedor_perfumes figure{
+    width: 70%;
+  }
+  .contenedor_perfumes article{
+  width: 95%;
+  margin-top: 20px;
+  }
+  .contenedor_trabajo{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .puesto{
+max-width: 100%;
+  }
+  .contenedor_trabajo figure{
+    width: 70%;
+    padding: 0;
+  }
+.info_servicios{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.info_servicios article{
+  max-width: 100%;
+}
+}
+/* movil arriba */
+
+  
